@@ -1,17 +1,14 @@
-var Role;
-(function (Role) {
-    Role["ADMIN"] = "ADMIN";
-    Role[Role["READ_ONLY"] = 100] = "READ_ONLY";
-    Role["AUTHOR"] = "YUKITO";
-})(Role || (Role = {}));
-var person = {
-    name: "Max",
-    age: 30,
-    hobbys: ['develop', 'read', 'excise', 'cooking', 'sports'],
-    role: Role.ADMIN,
+var combine = function (input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 };
-console.log(person.name);
-for (var _i = 0, _a = person.hobbys; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
-}
+var combineAges = combine(20, 14);
+var combineName = combine('yukito', 'takeuchi');
+console.log(combineAges);
+console.log(combineName);
