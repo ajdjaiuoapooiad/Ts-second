@@ -1,7 +1,8 @@
-var add = function (num1, num2) {
-    return num1 + num2;
-};
-function printResult(num) {
-    console.log('Result is ....' + num);
+var userInput;
+var userName;
+userInput = 5;
+userInput = "max";
+if (typeof userInput === 'string') {
+    userName = userInput;
+    console.log(userName);
 }
-printResult(add(10, 26));

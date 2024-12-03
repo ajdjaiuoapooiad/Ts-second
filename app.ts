@@ -1,10 +1,10 @@
-const add = (num1: number,num2: number) => {
-    return num1 + num2
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = "max"
+if(typeof userInput === 'string'){
+    userName = userInput;
+    console.log(userName);
 }
 
-function printResult(num: number): void{
-    console.log('Result is ....' + num);
-    
-}
-
-printResult(add(10,26))
